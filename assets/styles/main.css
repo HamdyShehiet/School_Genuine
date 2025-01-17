@@ -30,8 +30,8 @@
     --fs-16px:16px;
     --fs-14px:14px;
     --fs-12px:12px;
-    --fw-bold:700;
-    --fw-regular:400;
+    --fw-700:700;
+    --fw-400:400;
     --main-section-padding: 90px 0;
 }
 html{
@@ -39,7 +39,7 @@ html{
 }
 body{
     font-family: "Montserrat", serif;
-    font-weight: var(--fw-regular);
+    font-weight: var(--fw-400);
 }
 .container {
     margin: auto;
@@ -63,4 +63,102 @@ textarea{
 }
 img{
     max-width: 100%;
+}
+/* Utility Classes */
+.flex{
+    display: flex;
+}
+.i-flex{
+    display: inline-flex;
+    align-items: center;
+}
+.grid{
+    display: grid;
+}
+h1.title{
+    font-size: clamp(var(--fs-58px) - 20px,5vw,var(--fs-58px));
+    font-weight: var(--fw-bold);
+    color: var(--text-color);
+}
+h2.title{
+    font-size: clamp(var(--fs-40px) - 10px,5vw,var(--fs-40px));
+    font-weight: var(--fw-bold);
+    color: var(--text-color);
+}
+h3.title{
+    font-size: var(--fs-24px);
+    font-weight: var(--fw-bold);
+    color: var(--text-color);
+}
+.special-title{
+    font-size: var(--fs-20px);
+    font-weight: var(--fw-bold);
+    color: var(--text-color);
+}
+span.title{
+    font-size: var(--fs-16px);
+    font-weight: var(--fw-bold);
+    color: var(--primary-color);
+}
+p.description{
+    font-size: var(--fs-14px);
+    color: var(--text-color);
+}
+.btn{
+    display: inline-flex;
+    align-items: center;
+    gap: 15px;
+    font-size: var(--fs-14px);
+    font-weight: var(--fw-bold);
+    border-radius: 5px;
+    background-color: var(--primary-color);
+    color: var(--light-text-color);
+}
+.link{
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-size: var(--fs-14px);
+    font-weight: var(--fw-bold);
+    color: var(--primary-color);
+}
+.link-btn{
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 20px;
+    border: 1px solid var(--primary-color);
+    border-radius: 37px;
+    font-size: var(--fs-14px);
+    font-weight: var(--fw-bold);
+    color: var(--primary-color);
+}
+.overline{
+    position: relative;
+    padding-top: 35px;
+}
+.overline::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top:0;
+    width: 94px;
+    height: 7px;
+    background-color: var(--danger-color);
+}
+.underline{
+    position: relative;
+    padding-bottom: 20px;
+}
+.underline::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom:0;
+    width: 50px;
+    height: 2px;
+    background-color: var(--danger-color);
+}
+section:not(footer section){
+    padding: var(--main-section-padding);
 }
