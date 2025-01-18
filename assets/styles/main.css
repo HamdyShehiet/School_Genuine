@@ -77,27 +77,27 @@ img{
 }
 h1.title{
     font-size: clamp(var(--fs-58px) - 20px,5vw,var(--fs-58px));
-    font-weight: var(--fw-bold);
+    font-weight: var(--fw-700);
     color: var(--text-color);
 }
 h2.title{
     font-size: clamp(var(--fs-40px) - 10px,5vw,var(--fs-40px));
-    font-weight: var(--fw-bold);
+    font-weight: var(--fw-700);
     color: var(--text-color);
 }
 h3.title{
     font-size: var(--fs-24px);
-    font-weight: var(--fw-bold);
+    font-weight: var(--fw-700);
     color: var(--text-color);
 }
 .special-title{
     font-size: var(--fs-20px);
-    font-weight: var(--fw-bold);
+    font-weight: var(--fw-700);
     color: var(--text-color);
 }
 span.title{
     font-size: var(--fs-16px);
-    font-weight: var(--fw-bold);
+    font-weight: var(--fw-700);
     color: var(--primary-color);
 }
 p.description{
@@ -109,7 +109,7 @@ p.description{
     align-items: center;
     gap: 15px;
     font-size: var(--fs-14px);
-    font-weight: var(--fw-bold);
+    font-weight: var(--fw-700);
     border-radius: 5px;
     background-color: var(--primary-color);
     color: var(--light-text-color);
@@ -119,7 +119,7 @@ p.description{
     align-items: center;
     gap: 10px;
     font-size: var(--fs-14px);
-    font-weight: var(--fw-bold);
+    font-weight: var(--fw-700);
     color: var(--primary-color);
 }
 .link-btn{
@@ -130,7 +130,7 @@ p.description{
     border: 1px solid var(--primary-color);
     border-radius: 37px;
     font-size: var(--fs-14px);
-    font-weight: var(--fw-bold);
+    font-weight: var(--fw-700);
     color: var(--primary-color);
 }
 .overline{
