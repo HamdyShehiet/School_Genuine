@@ -162,3 +162,87 @@ p.description{
 section:not(footer section){
     padding: var(--main-section-padding);
 }
+/* Component */
+header{
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+    padding: 30px 0;
+    background-color: transparent;
+}
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header .container .logo a{
+    font-size: var(--fs-24px);
+    font-weight: var(--fw-700);
+    color: var(--text-color);
+}
+header .container nav ul li a{
+    font-size: var(--fs-14px);
+    font-weight: var(--fw-700);
+    color: var(--secondary-text-color);
+}
+header .container nav ul li a.link-style{
+    transition: all 300ms ease;
+}
+@media (max-width:991px) {
+    header .container nav ul{
+        position: fixed;
+        top: 100px;
+        right: -100%;
+        z-index: 9;
+        max-width: 250px;
+        width: 60%;
+        padding: 15px;
+        border-radius: 15px;
+        background-color: var(--dark-background-color);
+        transition: all 200ms ease;
+    }
+    header .container nav .humburger-icon{
+        cursor: pointer;
+    }
+    header .container nav ul.menu{
+        right: 20px;
+    }
+    header .container nav ul li a{
+        display: block;
+        margin: 10px;
+        text-align: center;
+        color: var(--light-background-color);
+    }
+    header .container nav ul li .join-us span{
+        margin-right: 15px;
+    }
+}
+@media (min-width:992px) {
+    header .container nav .humburger-icon{
+        display: none;
+    }
+    header .container nav ul{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+    header .container nav ul li .link-style:hover{
+        color: var(--primary-color);
+    }
+    header .container nav ul li .login-link{
+        margin-left: 150px;
+        color: var(--primary-color);
+    }
+    header .container nav ul li .join-us{
+        display: inline-flex;
+        align-items: center;
+        gap: 15px;
+        padding: 15px 25px;
+        font-size: var(--fs-14px);
+        font-weight: var(--fw-700);
+        border-radius: 5px;
+        background-color: var(--primary-color);
+        color: var(--light-text-color);
+    }
+}
