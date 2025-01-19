@@ -23,6 +23,9 @@
     --faded-secondary-color-1:#DDEEFE;
     --faded-secondary-color-2:#B6D7FF;
     --disabled-element-color:#8EC2F2;
+    --light-drop-shadow: 0 2px 4px 0 rgb(0 0 0 /.1);
+    --light-drop-shadow-2: 0 4px 4px 0 rgb(0 0 0 /.25);
+    --accentued-drop-shadow:0 13px 19px 0 rgb(0 0 0 /.07);
     --fs-58px:58px;
     --fs-40px:40px;
     --fs-24px:24px;
@@ -282,4 +285,17 @@ header .container nav ul li a.link-style{
         grid-template-columns: 520px 1fr ;
         justify-content: space-between;
     }
+}
+.about-us .container {
+    grid-template-columns: repeat(auto-fit,min(328px,100%));
+    justify-content: center;
+    gap: 30px;
+}
+.about-us .container .col{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 35px 40px;
+    background-color: var(--light-background-color);
+    box-shadow: var(--light-drop-shadow-2);
 }
