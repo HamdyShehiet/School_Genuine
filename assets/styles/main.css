@@ -344,7 +344,7 @@ section .container .section-details{
 .our-courses .section-info p.description{
     color: var(--light-text-color);
 }
-.our-courses .container .courses-list{
+.container .courses-list{
     grid-template-columns: repeat(auto-fit,min(342px,100%));
     justify-content: center;
     gap: 40px 10px;
