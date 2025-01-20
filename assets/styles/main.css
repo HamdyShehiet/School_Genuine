@@ -328,3 +328,12 @@ section .container .section-details{
         align-items: center;
     }
 }
+.brands .container{
+    grid-template-columns: repeat(auto-fit,min(149px,100%));
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.brands .container a{
+    text-align: center;
+}
