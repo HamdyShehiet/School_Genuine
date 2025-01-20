@@ -469,7 +469,7 @@ section .container .section-details{
     gap: 15px;
 }
 .watch-courses .container .courses-list .course .available-options .option{
-    align-items: start;
+    align-items: center;
     gap: 10px;
     font-size: var(--fs-16px);
     font-weight: var(--fw-700);
