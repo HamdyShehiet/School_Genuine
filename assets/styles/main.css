@@ -344,7 +344,7 @@ section .container .section-details{
 .our-courses .section-info p.description{
     color: var(--light-text-color);
 }
-.container .courses-list{
+.our-courses .container .courses-list{
     grid-template-columns: repeat(auto-fit,min(342px,100%));
     justify-content: center;
     gap: 40px 10px;
@@ -421,4 +421,58 @@ section .container .section-details{
 }
 .our-courses .container .courses-list .course .course-info .price strong:last-child{
     color: var(--secondary-color-3);
+}
+.watch-courses .container .courses-list{
+    grid-template-columns: repeat(auto-fit,min(329px,100%));
+    justify-content: center;
+    gap: 40px 30px;
+    margin-top: 90px;
+}
+.watch-courses .container .courses-list .course{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    padding: 50px 25px;
+    box-shadow: var(--light-drop-shadow);
+}
+.watch-courses .container .courses-list .course .free-text{
+    font-size: var(--fs-24px);
+    font-weight: var(--fw-700);
+    color: var(--text-color);
+}
+.watch-courses .container .courses-list .course p.description:first-of-type{
+    font-weight: var(--fw-700);
+}
+.watch-courses .container .courses-list .course .price{
+    display: inline-flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.watch-courses .container .courses-list .course .price strong{
+    font-size: var(--fs-40px);
+    font-weight: var(--fw-700);
+    color: var(--primary-color);
+}
+.watch-courses .container .courses-list .course .price span{
+    font-size: var(--fs-14px);
+    font-weight: var(--fw-700);
+    color: var(--disabled-element-color);
+}
+.watch-courses .container .courses-list .course .btn{
+    display: block;
+    text-align: center;
+}
+.watch-courses .container .courses-list .course .available-options{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+}
+.watch-courses .container .courses-list .course .available-options .option{
+    align-items: start;
+    gap: 10px;
+    font-size: var(--fs-16px);
+    font-weight: var(--fw-700);
+    color: var(--text-color);
+    line-height: 1.6;
 }
