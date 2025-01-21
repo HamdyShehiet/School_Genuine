@@ -533,7 +533,7 @@ section .container .section-details{
     flex-grow: 1;
     width: 84%;
     padding: 20px;
-    border-radius: 5px;
+    border-radius: 4px;
     border: 1px solid #E6E6E6;
     background-color: #f1efef;
     color: var(--secondary-text-color);
@@ -543,8 +543,67 @@ section .container .section-details{
 }
 .join-us .container form .form-box input[type="submit"]{
     padding: 20px;
-    border-radius: 5px;
+    border-radius: 4px;
     font-size: var(--fs-14px);
     background-color: var(--primary-color);
     color: var(--light-text-color);
+}
+.footer-top {
+    padding: 50px 0;
+}
+.footer-top .container{
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+}
+.footer-top .container ul{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+@media (max-width:991px) {
+    .footer-top .container ul{
+        align-items: center;
+    }
+}
+.footer-top .container ul:not(:last-child){
+    max-width: 223px;
+    width: 100%;
+}
+.footer-top .container ul li.title{
+    margin-bottom: 10px;
+    font-weight: var(--fw-700);
+    color: var(--text-color);
+}
+.footer-top .container ul li a{
+    font-size: var(--fs-14px);
+    font-weight: var(--fw-700);
+    color: var(--secondary-text-color);
+}
+.footer-top .container ul .contact{
+    flex-direction: column;
+    gap: 10px;
+}
+.footer-top .container ul .contact a{
+    gap: 10px;
+}
+.footer-bottom {
+    padding: 25px 0;
+    font-weight: var(--fw-700);
+    background-color: var(--light-gray-1);
+}
+.footer-bottom .container {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+@media (max-width:991px) {
+    .footer-bottom .container{
+        justify-content: center;
+        text-align: center;
+    }
+}
+.footer-bottom .container .social-icons{
+    gap: 20px;
 }
