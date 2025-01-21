@@ -487,15 +487,17 @@ section .container .section-details{
     align-items: center;
     text-align: center;
     gap: 30px;
-    padding: 30px;
+    padding: 15px;
 }
 .approdable-packages .container .testimonials .testimonial .evaluation{
     gap: 5px;
 }
 .approdable-packages .container .testimonials .testimonial .person-info{
     display: flex;
-    gap: 15px;
+    flex-wrap: wrap;
     align-items: center;
+    text-align: center;
+    gap: 15px;
     margin-bottom: 15px;
 }
 .approdable-packages .container .testimonials .testimonial .person-info .details {
@@ -511,4 +513,38 @@ section .container .section-details{
 }
 .approdable-packages .container .testimonials .testimonial .person-info .details .job-title{
     color: var(--secondary-text-color);
+}
+.join-us .container{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 80px;
+}
+.join-us .container form {
+    max-width: 688px;
+    width: 100%;
+}
+.join-us .container form .form-box{
+    flex-wrap:wrap;
+    justify-content: center;
+    row-gap: 20px;
+}
+.join-us .container form .form-box input[type="email"]{
+    flex-grow: 1;
+    width: 84%;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid #E6E6E6;
+    background-color: #f1efef;
+    color: var(--secondary-text-color);
+}
+.join-us .container form .form-box input[type="email"]::placeholder{
+    font-size: var(--fs-14px);
+}
+.join-us .container form .form-box input[type="submit"]{
+    padding: 20px;
+    border-radius: 5px;
+    font-size: var(--fs-14px);
+    background-color: var(--primary-color);
+    color: var(--light-text-color);
 }
